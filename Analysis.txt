@@ -1,0 +1,83 @@
+Step 3 - Calculate Big O Worst Case Run Time Analysis
+
+Task0: 
+1. Print first record and last record of texts: 
+    a. first record lookup is constant time = O(1) 
+    b. last record lookup is constant time = O(1) 
+    c. result: O(1) * 2 = O(1)
+
+
+Task1:
+1. Print count of unique phone numbers in calls list: 
+    a. assign combined set variable = O(1)
+    b. for loop over call list = O(N)
+    c. assign two variables = O(1) * 2
+    d. add two variables to set = O(1) * 2
+    d. for loop over text list = O(M) 
+    c. assign two variables = O(1) * 2
+    d. add two variables to set = O(1) * 2
+    f. get length of set = O(1)
+    g. result: O(1) * 10 + O(N) + O(M) = O(N)
+
+
+Task2:
+1. Print max duration on phone: 
+    a. assign dictionary variable = O(1)
+    b. for loop over call list = O(N)
+    c. assign three variables = O(1) * 3
+    d. if statement over dict keys = O(N) 
+    e. if statement over dict keys = O(N) 
+    f. assign phone duration dictionary variable = O(1)
+    g. for loop iterate over phone duration = O(M)
+    h. sum and map iteration = O(1) + O(M) 
+    i. assign max time variable from dictionary = O(1)
+    j. result: O(1) * 5 + O(N) * 3 + O(M) * 2 = O(N * M)
+
+
+Task3:
+1. Print unique area codes:
+    a. if statement = O(N) 
+    b. assign two list variables = O(1) * 2
+    c. for loop iterate over call list = O(N) 
+    d. assign four list variables = O(1) * 4
+    e. if statement = O(N) 
+    f. add to receiver list = O(1)
+    g. for loop iterate over receiver list = O(M)
+    h. if statement = O(M)
+    i. add to code list = O(1)
+    j. sort list = O(N log N)   
+    k. result: O(N) * 3 + O(1) * 8 + O(M) * 2 = O(N log N * M) = O(N log N)
+
+2.  Print percentage of calls: 
+    a. assign two lists variables = O(1) * 2
+    b. for loop iterate over call list = O(N)
+    c. assign four list variables = O(1) * 4
+    d. if statement = O(N) 
+    e. add to fixed list = O(1)
+    f. if statement = O(N)
+    g. add to from fixed list = O(1)
+    h. assign two variables = O(1) * 2
+    i. multiplication statement = O(NK)                     *cite: 1, 2
+    d. division and round statement = O(1) * 2 
+    e. result = O(1) * 12 + O(N) * 3 + O(NK) = O(NK)  
+
+Task4:
+1. Print telemarketers list:
+    a. assign two set variables = O(1) * 2
+    b. for loop over calls list = O(N)
+    c. assign two call list variables = O(1) * 4
+    d. add to two sets = O(1) * 2 
+    e. for loop over texts list = O(M)
+    f. assign two list variables = O(1) * 2 
+    g. add to two sets = O(1) * 2
+    h. assign difference variable = O(1)
+    i. subtract two sets =  O(len(N) + len(M))              *cite: 1
+    j. assign result variable = O(1)
+    k. sort set = O(N log N)
+    l. result: O(1) * 14 + O(N) + O(M) + O(N log N) + O(len(N) + len(M)) 
+                = O(N * M) + O(N log N) + O(len(N) + len(M))
+                = O(N log N)
+
+Citations:
+1. https://www.ics.uci.edu/~pattis/ICS-33/lectures/complexitypython.txt 
+2. https://wiki.python.org/moin/TimeComplexity
